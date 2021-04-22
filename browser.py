@@ -1,6 +1,5 @@
 from selenium import webdriver
 import time
-import kullaniciBilgileri as kb
 
 class Browser:
     def __init__(self,link):
@@ -57,5 +56,5 @@ class Browser:
         self.browser.get(self.link + "/" + kb.userName)
         time.sleep(3)
 
-kur = Browser("https://www.instagram.com")
-print(kur)
+setup = Browser("https://www.instagram.com")
+print(setup)
