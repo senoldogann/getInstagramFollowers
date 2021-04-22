@@ -5,7 +5,7 @@ import kullaniciBilgileri as kb
 class Browser:
     def __init__(self,link):
         self.link = link
-        self.browser = webdriver.Chrome("/Users/senol/Desktop/chromedriver")
+        self.browser = webdriver.Chrome("chromedriver specify path")
         Browser.goInstagram(self)
     def goInstagram(self):
         self.browser.get(self.link)
